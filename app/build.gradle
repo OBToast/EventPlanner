@@ -35,6 +35,7 @@ android {
 dependencies {
     implementation libs.navigation.fragment.ktx
     implementation libs.navigation.ui.ktx
+    implementation libs.recyclerview
     def fragment_version = "1.8.9"
 
     // Java language implementation

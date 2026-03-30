@@ -14,6 +14,6 @@ public interface EventDao {
     @Delete
     public void deletePlannedEvent(PlannedEvent plannedEvent);
 
-    @Query("SELECT * FROM PlannedEvent ORDER BY id ASC")
+    @Query("SELECT * FROM Events ORDER BY id ASC")
     public List<PlannedEvent> getPlannedEvents();
 }

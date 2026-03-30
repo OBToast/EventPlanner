@@ -3,7 +3,7 @@ package com.example.eventplanner;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity
+@Entity(tableName = "Events")
 public class PlannedEvent {
     @PrimaryKey (autoGenerate = true)
     int id;
@@ -23,5 +23,22 @@ public class PlannedEvent {
         this.location = location;
         this.time = time;
         this.category = category;
+    }
+
+    public String getEventTitle()
+    {
+        return title;
+    }
+    public String getEventLocation()
+    {
+        return location;
+    }
+    public int getEventTime()
+    {
+        return time;
+    }
+    public Category getEventCategory()
+    {
+        return category;
     }
 }
