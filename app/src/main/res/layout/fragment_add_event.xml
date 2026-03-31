@@ -22,28 +22,25 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:ems="10"
-            android:inputType="text"
-            android:text="Enter event title" />
+            android:hint="Enter event title"
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/locationEditText"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:ems="10"
-            android:inputType="text"
-            android:text="Enter location" />
+            android:hint="Enter location"
+            android:inputType="text" />
 
-        <EditText
-            android:id="@+id/timeEditText"
+
+        <DatePicker
+            android:id="@+id/datePicker"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:ems="10"
-            android:hint="Enter time"
-            android:inputType="number" />
-
+            android:layout_height="wrap_content" />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/categoiresSpinner"
             android:layout_width="match_parent"
             android:layout_height="48dp" />
 

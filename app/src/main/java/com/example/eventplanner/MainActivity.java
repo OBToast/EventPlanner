@@ -27,12 +27,14 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        NavHostFragment navHostFragment =
-                (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.fragmentContainerView);
+        //Find the navhostfragment and cast it
+        NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.fragmentContainerView);
+        //Get the nav controller
         NavController navController = navHostFragment.getNavController();
-
-        BottomNavigationView bottomNav = findViewById(R.id.bottomNavigationView);
-        NavigationUI.setupWithNavController(bottomNav, navController);
+        //Get the bottom nav bar
+        BottomNavigationView bottomNavBar = findViewById(R.id.bottomNavigationView);
+        //Connect the navbar with the nav controller
+        NavigationUI.setupWithNavController(bottomNavBar, navController);
 
 
     }

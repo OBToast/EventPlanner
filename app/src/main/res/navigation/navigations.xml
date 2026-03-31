@@ -15,6 +15,6 @@
         android:id="@+id/addEventFragment"
         android:name="com.example.eventplanner.AddEventFragment"
         android:label="fragment_add_event"
-        tools:layout="@layout/fragment_add_event" >
+        tools:layout="@layout/fragment_add_event">
     </fragment>
 </navigation>
